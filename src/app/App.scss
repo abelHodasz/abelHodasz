@@ -1,0 +1,35 @@
+@use './colors';
+$light-blue: rgba(72, 199, 235, 1);
+$white: rgba(255, 255, 255, 1);
+$light-orange: rgba(255, 238, 224, 1);
+$grey: rgb(230, 230, 230);
+
+:root {
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+body {
+    color: black;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $grey;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $light-blue;
+        border-radius: 3px;
+    }
+}
+
+main {
+    margin-left: 10rem;
+}

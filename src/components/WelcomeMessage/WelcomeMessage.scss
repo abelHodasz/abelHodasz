@@ -1,0 +1,77 @@
+.welcome {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    animation: animateSection 2s;
+    margin-top: 100px;
+    filter: contrast(1.6);
+}
+
+.gooey {
+    .text {
+        color: black;
+        display: inline-block;
+        margin: 10px;
+        font-weight: 700;
+        font-size: 80px;
+        animation: animate 2s;
+        filter: blur(1px);
+    }
+}
+
+@keyframes animate {
+    0% {
+        margin: -28px;
+        filter: blur(25px);
+    }
+    40% {
+        filter: blur(5px);
+    }
+    100% {
+        margin: 10px;
+        filter: blur(1px);
+    }
+}
+
+@keyframes animateSection {
+    0% {
+        filter: contrast(50);
+    }
+    100% {
+        filter: contrast(1.6);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .welcome {
+        height: 80vh;
+    }
+
+    .gooey {
+        .text {
+            font-weight: 1200;
+            font-size: 60px;
+            display: block;
+            text-align: center;
+            animation: animateMobile 2s;
+        }
+    }
+}
+
+@keyframes animateMobile {
+    0% {
+        margin: -75px 0;
+        filter: blur(25px);
+    }
+    40% {
+        filter: blur(3px);
+    }
+    100% {
+        margin: 10px 0;
+        filter: blur(1px);
+    }
+}

@@ -1,0 +1,32 @@
+@use './colors';
+:root {
+  font-size: 16px;
+  font-family: "Roboto";
+}
+
+body {
+  color: black;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #48c7eb;
+  border-radius: 3px;
+}
+
+main {
+  margin-left: 10rem;
+}
+/*# sourceMappingURL=App.css.map */
