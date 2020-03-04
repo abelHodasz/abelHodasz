@@ -30,7 +30,6 @@ $transition-speed: 600ms;
     height: 5rem;
     color: $light-grey;
     text-decoration: none;
-    transition: $transition-speed;
     transition: color 0.2s;
 }
 
@@ -50,7 +49,7 @@ $transition-speed: 600ms;
 }
 
 .nav-link svg {
-    transition: $transition-speed;
+    transition: color 0.2s;
 }
 
 .link-active {
@@ -62,10 +61,6 @@ $transition-speed: 600ms;
     width: 100%;
     max-height: 5rem;
     height: 5rem;
-}
-
-.navbor:hover .logo svg {
-    opacity: 1;
 }
 
 @media only screen and (min-width: 600px) {
@@ -81,6 +76,7 @@ $transition-speed: 600ms;
 
     .navbar:hover .link-text {
         display: block;
+        animation: fadeIn 0.2s ease;
     }
 }
 
@@ -111,5 +107,14 @@ $transition-speed: 600ms;
 
     main {
         margin: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

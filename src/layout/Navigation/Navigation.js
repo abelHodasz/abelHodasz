@@ -22,7 +22,9 @@ export default function Navigation() {
         >
             <ul className="navbar-nav">
                 <li className="logo">
-                    <Logo animate={hover} />
+                    <NavLink to="/">
+                        <Logo animate={hover} />
+                    </NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink

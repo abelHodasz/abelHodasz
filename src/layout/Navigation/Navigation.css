@@ -35,8 +35,6 @@
   height: 5rem;
   color: #b6b6b6;
   text-decoration: none;
-  -webkit-transition: 600ms;
-  transition: 600ms;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -57,8 +55,8 @@
 }
 
 .nav-link svg {
-  -webkit-transition: 600ms;
-  transition: 600ms;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .link-active {
@@ -72,10 +70,6 @@
   height: 5rem;
 }
 
-.navbor:hover .logo svg {
-  opacity: 1;
-}
-
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
@@ -87,6 +81,8 @@
   }
   .navbar:hover .link-text {
     display: block;
+    -webkit-animation: fadeIn 0.2s ease;
+            animation: fadeIn 0.2s ease;
   }
 }
 
@@ -120,6 +116,24 @@
   }
   main {
     margin: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=Navigation.css.map */
