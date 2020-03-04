@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
 import "./AbelHodasz.css";
-import LogoSmall from "../AbelHodaszSmall/AbelHodaszSmall";
 import AbelHodaszSmall from "../AbelHodaszSmall/AbelHodaszSmall";
 
 export default function AbelHodasz(props) {
@@ -17,6 +16,11 @@ export default function AbelHodasz(props) {
                 },
                 direction: "alternate",
                 loop: true
+            });
+            anime({
+                targets: "#abel-hodasz",
+                diration: 200,
+                opacity: 1
             });
         }
     }, [props.animate]);

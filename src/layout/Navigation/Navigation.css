@@ -1,8 +1,5 @@
 .navbar {
-  width: 5rem;
-  height: 100vh;
   position: fixed;
-  top: 0;
   background-color: #23232e;
   -webkit-transition: width 0.2s ease;
   transition: width 0.2s ease;
@@ -59,14 +56,6 @@
   margin: 0 1.5rem;
 }
 
-.navbar:hover {
-  width: 16rem;
-}
-
-.navbar:hover .link-text {
-  display: block;
-}
-
 .nav-link svg {
   -webkit-transition: 600ms;
   transition: 600ms;
@@ -85,5 +74,52 @@
 
 .navbor:hover .logo svg {
   opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+  .navbar:hover {
+    width: 16rem;
+  }
+  .navbar:hover .link-text {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .link-text {
+    margin: 0 auto;
+    display: block;
+  }
+  main {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=Navigation.css.map */

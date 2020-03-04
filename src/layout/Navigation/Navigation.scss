@@ -6,10 +6,7 @@ $darkest-grey: #1c1c24;
 $transition-speed: 600ms;
 
 .navbar {
-    width: 5rem;
-    height: 100vh;
     position: fixed;
-    top: 0;
     background-color: $dark-grey;
     transition: width 0.2s ease;
 }
@@ -52,14 +49,6 @@ $transition-speed: 600ms;
     margin: 0 1.5rem;
 }
 
-.navbar:hover {
-    width: 16rem;
-}
-
-.navbar:hover .link-text {
-    display: block;
-}
-
 .nav-link svg {
     transition: $transition-speed;
 }
@@ -79,5 +68,48 @@ $transition-speed: 600ms;
     opacity: 1;
 }
 
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navbar .link-text {
+        margin: 0 auto;
+        display: block;
+    }
+
+    main {
+        margin: 0;
+    }
 }
