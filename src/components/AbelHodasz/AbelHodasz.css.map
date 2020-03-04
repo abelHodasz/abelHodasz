@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACT,IAAI,EAAE,IAAI;EACV,MAAM,EAJG,OAAO;EAKhB,YAAY,EAAE,CAAC;EACf,OAAO,EAAE,EAAE;EACX,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "AbelHodasz.scss"
+    ],
+    "names": [],
+    "file": "AbelHodasz.css"
+}
