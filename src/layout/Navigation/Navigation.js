@@ -72,7 +72,7 @@ export default function Navigation() {
                     <NavLink
                         activeClassName="link-active"
                         className="nav-link"
-                        to="/all-projects"
+                        to="/projects"
                         exact
                     >
                         <ProjectsIcon

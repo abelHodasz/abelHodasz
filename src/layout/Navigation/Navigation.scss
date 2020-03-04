@@ -6,6 +6,7 @@ $darkest-grey: #1c1c24;
 $transition-speed: 600ms;
 
 .navbar {
+    z-index: 2;
     position: fixed;
     background-color: $dark-grey;
     transition: width 0.2s ease;
