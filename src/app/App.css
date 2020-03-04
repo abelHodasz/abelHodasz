@@ -1,4 +1,4 @@
-@use './colors';
+@use 'colors';
 :root {
   font-size: 16px;
   font-family: "Roboto";
@@ -6,7 +6,7 @@
 
 body {
   color: black;
-  background-color: white;
+  background-color: #f2f3f7;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #e6e6e6;
+  background: white;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -26,7 +26,40 @@ body::-webkit-scrollbar-thumb {
   border-radius: 3px;
 }
 
-main {
-  margin-left: 5rem;
+.page-container {
+  max-width: 1800px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Comfortaa", cursive;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+.title {
+  margin: 20px 0 -5px 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body main {
+    margin-bottom: 5rem;
+  }
 }
 /*# sourceMappingURL=App.css.map */
