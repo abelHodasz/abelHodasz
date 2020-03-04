@@ -5,11 +5,15 @@ import Footer from "../layout/Footer";
 import Home from "../pages/Home/Home";
 import { Container, ThemeProvider } from "@material-ui/core";
 import { basic } from "../themes/themes";
-
+import { ProjectProvider } from "../context/ProjectContext";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
-    return <Content />;
+    return (
+        <ProjectProvider>
+            <Content />
+        </ProjectProvider>
+    );
 }
 
 function Content() {
