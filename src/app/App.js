@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Home from "../pages/Home/Home";
+import Projects from "../pages/Projects/Projects";
 import { Container, ThemeProvider } from "@material-ui/core";
 import { basic } from "../themes/themes";
 import { ProjectProvider } from "../context/ProjectContext";
@@ -23,11 +24,16 @@ function Content() {
                 <ThemeProvider theme={basic}>
                     <Header />
                     <main className="app">
-                        <Container>
+                        <div className="page-container">
                             <Switch>
                                 <Route path="/" exact component={Home} />
+                                <Route
+                                    path="/projects"
+                                    exact
+                                    component={Projects}
+                                />
                             </Switch>
-                        </Container>
+                        </div>
                     </main>
                     <Footer />
                 </ThemeProvider>
