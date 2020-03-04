@@ -1,0 +1,89 @@
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #23232e;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  color: #b6b6b6;
+  text-decoration: none;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  background: #1c1c24;
+  color: #76d5f0;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.navbar:hover {
+  width: 16rem;
+}
+
+.navbar:hover .link-text {
+  display: block;
+}
+
+.nav-link svg {
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.link-active {
+  color: #48c7eb;
+}
+
+.logo {
+  text-align: center;
+  width: 100%;
+  max-height: 5rem;
+  height: 5rem;
+}
+
+.navbor:hover .logo svg {
+  opacity: 1;
+}
+/*# sourceMappingURL=Navigation.css.map */
