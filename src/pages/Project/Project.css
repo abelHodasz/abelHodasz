@@ -1,0 +1,106 @@
+.single-project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px;
+  height: 80vh;
+}
+
+.single-project-container .tech-logo {
+  height: 40px;
+  width: auto;
+}
+
+.single-project-container .sp-technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-project-container .sp-technologies span {
+  text-align: center;
+}
+
+.single-project-container .sp-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.single-project-container .sp-description-container,
+.single-project-container .sp-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .single-project-container .sp-description-container {
+    width: 50%;
+  }
+  .single-project-container .sp-description-container .sp-description {
+    width: 75%;
+    height: 75%;
+  }
+  .single-project-container .sp-description-container .sp-technologies {
+    height: 25%;
+    width: 80%;
+  }
+  .single-project-container .sp-image-container {
+    width: 50%;
+  }
+  .single-project-container .sp-image-container .sp-image {
+    width: 90%;
+  }
+  .single-project-container .sp-image-container .sp-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  .single-project-container .sp-image-container .sp-links {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .single-project-container .sp-description-container {
+    width: 100%;
+  }
+  .single-project-container .sp-image-container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Project.css.map */

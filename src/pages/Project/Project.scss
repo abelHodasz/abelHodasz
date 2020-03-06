@@ -1,0 +1,76 @@
+.single-project-container {
+    .tech-logo {
+        height: 40px;
+        width: auto;
+    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+    height: 80vh;
+
+    .sp-technologies {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        span {
+            text-align: center;
+        }
+    }
+    .sp-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .sp-description-container,
+    .sp-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .single-project-container {
+        .sp-description-container {
+            .sp-description {
+                width: 75%;
+                height: 75%;
+            }
+            .sp-technologies {
+                height: 25%;
+                width: 80%;
+            }
+
+            width: 50%;
+        }
+        .sp-image-container {
+            width: 50%;
+            .sp-image {
+                width: 90%;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .sp-links {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .single-project-container {
+        .sp-description-container {
+            width: 100%;
+        }
+        .sp-image-container {
+            width: 100%;
+        }
+    }
+}
