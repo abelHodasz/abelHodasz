@@ -21,7 +21,6 @@
 }
 
 .project-logo-container .project-logo {
-  opacity: 0.4;
   width: auto;
   z-index: 0;
 }
@@ -99,9 +98,12 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  color: #00a6d4;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.project-header a:hover {
+.project-header a h3:hover {
   color: #48c7eb;
 }
 
@@ -138,10 +140,6 @@
   .project-logo-container .project-logo {
     height: 30px;
   }
-  .project-logo-container:hover .play-icon {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -168,10 +166,6 @@
   }
   .project-logo-container .project-logo {
     height: 20px;
-  }
-  .play-icon {
-    -webkit-transform: translate(-15%, -15%);
-            transform: translate(-15%, -15%);
   }
 }
 /*# sourceMappingURL=ProjectSlider.css.map */

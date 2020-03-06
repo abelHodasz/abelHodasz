@@ -2,25 +2,23 @@ import React, { useContext, Fragment } from "react";
 import { ProjectContext } from "../../context/ProjectContext";
 import "./ProjectSlider.css";
 import gitHubIcon from "../../static/icons/gitHubIcon.png";
-import PlayArrowRoundedIcon from "@material-ui/icons/PlayArrowRounded";
 import { useHistory } from "react-router-dom";
 
 export default function ProjectSlider(props) {
-    const projects = useContext(ProjectContext)[0];
+    const projects = props.projects;
     const history = useHistory();
 
-    return projects.map(project => (
-        <span className="project">
+    if (!props.projects) return null;
+
+    const projectToJsx = project => (
+        <span className="project" key={project.id}>
             <div className="project-header">
                 <span
                     className="project-logo-container"
                     onClick={() => {
-                        window.open(project.link);
+                        history.push("projects/category/" + project.category);
                     }}
                 >
-                    <span className="play-icon-container">
-                        <PlayArrowRoundedIcon className="play-icon" />
-                    </span>
                     <img src={project.logo} className="project-logo" alt="" />
                 </span>
                 <a href={project.page}>
@@ -45,10 +43,9 @@ export default function ProjectSlider(props) {
                 )}
             </div>
             <div
-                key={project.id}
                 className="project-container"
                 onClick={() => {
-                    history.push(project.page);
+                    window.open(project.link);
                 }}
             >
                 <img
@@ -63,5 +60,9 @@ export default function ProjectSlider(props) {
                 />
             </div>
         </span>
-    ));
+    );
+
+    if (!props.projects.length) return projectToJsx(projects);
+
+    return projects.map(projectToJsx);
 }
