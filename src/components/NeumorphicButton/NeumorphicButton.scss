@@ -1,0 +1,43 @@
+$box-shadow-white: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+
+$box-shadow-white-hover: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+
+$light-grey: #f2f3f7;
+$dark-blue: #00a6d4;
+
+.neumorphic-btn {
+    color: $dark-blue;
+    background: $light-grey;
+
+    font-family: "Comfortaa", cursive;
+
+    padding: 10px 15px;
+    border-radius: 40px;
+    border: none;
+
+    cursor: pointer;
+
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+
+    box-shadow: $box-shadow-white;
+    &:hover {
+        box-shadow: $box-shadow-white-hover;
+    }
+
+    &:focus,
+    &:link {
+        outline: none;
+    }
+
+    &:hover span {
+        font-size: 0.98rem;
+        transform: scale(0.98);
+    }
+}
