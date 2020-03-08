@@ -11,7 +11,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 25px;
+  margin: 0 10%;
   height: 80vh;
 }
 
@@ -35,6 +35,10 @@
           align-items: center;
 }
 
+.single-project-container .sp-technologies p {
+  font-family: "Comfortaa", cursive;
+}
+
 .single-project-container .sp-technologies span {
   text-align: center;
 }
@@ -47,6 +51,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -54,6 +61,7 @@
 
 .single-project-container .sp-description-container,
 .single-project-container .sp-image-container {
+  padding-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,31 +74,39 @@
           align-items: center;
 }
 
+.single-project-container .sp-description-container .sp-description,
+.single-project-container .sp-image-container .sp-description {
+  font-size: 1.3rem;
+}
+
 @media only screen and (min-width: 1000px) {
   .single-project-container .sp-description-container {
     width: 50%;
   }
   .single-project-container .sp-description-container .sp-description {
     width: 75%;
-    height: 75%;
+    height: 70%;
   }
   .single-project-container .sp-description-container .sp-technologies {
-    height: 25%;
+    height: 20%;
     width: 80%;
   }
   .single-project-container .sp-image-container {
     width: 50%;
   }
   .single-project-container .sp-image-container .sp-image {
-    width: 90%;
+    width: 100%;
+    height: 60%;
   }
   .single-project-container .sp-image-container .sp-image img {
+    border-radius: 5px;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .single-project-container .sp-image-container .sp-links {
+    margin-top: 20px;
     width: 50%;
   }
 }
@@ -99,8 +115,31 @@
   .single-project-container .sp-description-container {
     width: 100%;
   }
+  .single-project-container .sp-description-container .sp-description {
+    width: 75%;
+    height: 70%;
+  }
+  .single-project-container .sp-description-container .sp-technologies {
+    height: 20%;
+    width: 80%;
+  }
   .single-project-container .sp-image-container {
     width: 100%;
+  }
+  .single-project-container .sp-image-container .sp-image {
+    width: 70%;
+    height: 70%;
+  }
+  .single-project-container .sp-image-container .sp-image img {
+    border-radius: 5px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .single-project-container .sp-image-container .sp-links {
+    margin-top: 20px;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=Project.css.map */

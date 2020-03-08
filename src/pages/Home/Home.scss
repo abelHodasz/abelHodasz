@@ -9,21 +9,78 @@
 
 .home-header {
     height: 30%;
-    margin: 10px 25px;
+    margin: 10px 1  0vw;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    :nth-child(3) {
+        margin-left: 30px;
+    }
+}
+
+.home-about-button {
+    height: 20%;
 }
 
 .home-projects {
-    height: 70%;
+    height: 50%;
 }
 
 @media only screen and (min-width: 600px) {
     #home {
-        height: 100vh;
+        height: 80vh;
+    }
+
+    .home-header {
+        :nth-child(3) {
+            margin-left: 30px;
+        }
+        .home-qualities {
+            list-style: none;
+            :nth-child(1) {
+                margin-left: 5px;
+            }
+            :nth-child(2) {
+                margin-left: 10px;
+            }
+            :nth-child(3) {
+                margin-left: 15px;
+            }
+            li {
+                font-size: 1.2rem;
+                font-family: "Comfortaa", cursive;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: 600px) {
     #home {
-        height: calc(100vh - 5rem);
+        height: calc(80vh - 5rem);
+    }
+
+    .home-header {
+        font-size: 1rem;
+
+        :nth-child(3) {
+            margin-left: 20px;
+        }
+        .home-qualities {
+            list-style: none;
+            :nth-child(1) {
+                margin-left: 0px;
+            }
+            :nth-child(2) {
+                margin-left: 5px;
+            }
+            :nth-child(3) {
+                margin-left: 10px;
+            }
+            li {
+                font-size: 0.9rem;
+                font-family: "Comfortaa", cursive;
+            }
+        }
     }
 }

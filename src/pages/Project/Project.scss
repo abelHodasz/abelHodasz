@@ -7,10 +7,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 25px;
+    margin: 0 10%;
     height: 80vh;
 
     .sp-technologies {
+        p {
+            font-family: "Comfortaa", cursive;
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -22,10 +25,15 @@
     .sp-links {
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-evenly;
     }
     .sp-description-container,
     .sp-image-container {
+        padding-top: 5%;
+        .sp-description {
+            font-size: 1.3rem;
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,10 +45,10 @@
         .sp-description-container {
             .sp-description {
                 width: 75%;
-                height: 75%;
+                height: 70%;
             }
             .sp-technologies {
-                height: 25%;
+                height: 20%;
                 width: 80%;
             }
 
@@ -49,15 +57,18 @@
         .sp-image-container {
             width: 50%;
             .sp-image {
-                width: 90%;
+                width: 100%;
+                height: 60%;
                 img {
+                    border-radius: 5px;
                     object-fit: cover;
                     width: 100%;
-                    height: auto;
+                    height: 100%;
                 }
             }
 
             .sp-links {
+                margin-top: 20px;
                 width: 50%;
             }
         }
@@ -67,10 +78,34 @@
 @media only screen and (max-width: 1000px) {
     .single-project-container {
         .sp-description-container {
+            .sp-description {
+                width: 75%;
+                height: 70%;
+            }
+            .sp-technologies {
+                height: 20%;
+                width: 80%;
+            }
+
             width: 100%;
         }
         .sp-image-container {
             width: 100%;
+            .sp-image {
+                width: 70%;
+                height: 70%;
+                img {
+                    border-radius: 5px;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .sp-links {
+                margin-top: 20px;
+                width: 50%;
+            }
         }
     }
 }

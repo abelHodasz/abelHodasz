@@ -1,9 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useContext } from "react";
 import { ProjectContext } from "../../context/ProjectContext";
 import BackIcon from "@material-ui/icons/ArrowBackIosOutlined";
-import gitHubIcon from "../../static/icons/gitHubIcon.png";
 import "./Project.css";
 import NemorphicButton from "../../components/NeumorphicButton/NemorphicButton";
 
@@ -12,12 +11,16 @@ export default function Project(props) {
     const { id } = useParams();
     const project = useContext(ProjectContext)[0].find(proj => proj.id == id);
 
-    const technologiesJSX = project.technologies.map(tech => (
-        <span key={tech.name}>
-            <img className="tech-logo" src={tech.icon} alt="" />
-            <p>{tech.name}</p>
-        </span>
-    ));
+    const technologiesJSX = project.technologies ? (
+        project.technologies.map(tech => (
+            <span key={tech.name}>
+                <img className="tech-logo" src={tech.icon} alt="" />
+                <p>{tech.name}</p>
+            </span>
+        ))
+    ) : (
+        <span></span>
+    );
 
     if (!project) {
         return (
@@ -55,8 +58,20 @@ export default function Project(props) {
                         <img src={project.image} alt="screenshot" />
                     </span>
                     <span className="sp-links">
-                        <NemorphicButton>Code</NemorphicButton>
-                        <NemorphicButton>Page</NemorphicButton>
+                        {project.gitHubLink ? (
+                            <NemorphicButton
+                                onClick={() => window.open(project.gitHubLink)}
+                            >
+                                Code
+                            </NemorphicButton>
+                        ) : (
+                            <Fragment />
+                        )}
+                        <NemorphicButton
+                            onClick={() => window.open(project.link)}
+                        >
+                            App
+                        </NemorphicButton>
                     </span>
                 </div>
             </span>

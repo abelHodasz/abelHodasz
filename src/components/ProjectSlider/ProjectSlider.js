@@ -16,7 +16,14 @@ export default function ProjectSlider(props) {
                 <span
                     className="project-logo-container"
                     onClick={() => {
-                        history.push("projects/category/" + project.category);
+                        if (
+                            history.location.pathname !==
+                            "/projects/category/" + project.category
+                        ) {
+                            history.push(
+                                "/projects/category/" + project.category
+                            );
+                        }
                     }}
                 >
                     <img src={project.logo} className="project-logo" alt="" />

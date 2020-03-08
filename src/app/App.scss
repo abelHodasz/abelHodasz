@@ -83,38 +83,13 @@ h3 {
 h1 {
     text-transform: capitalize;
     letter-spacing: 0.7px;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 2.5rem;
 }
 
 h3 {
     font-weight: 400;
     letter-spacing: 0.6px;
-}
-
-.title {
-    padding: 30px 20px;
-}
-
-.link-container {
-    .link {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        &:hover {
-            color: $light-blue;
-        }
-    }
-    font-family: "Comfortaa", cursive;
-    display: inline-block;
-    text-decoration: none;
-    color: $dark-blue;
-    margin: 5px 10px;
-}
-
-.link-container {
-    display: flex;
-    align-items: center;
 }
 
 .projects-container {
@@ -128,6 +103,30 @@ h3 {
 
 .back {
     padding-left: 20%;
+}
+
+.title {
+    height: 15vh;
+    line-height: 15vh;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.link-container {
+    height: 5vh;
+    .link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        &:hover {
+            color: $light-blue;
+        }
+    }
+    font-family: "Comfortaa", cursive;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $dark-blue;
 }
 
 @media only screen and (min-width: 600px) {
@@ -159,7 +158,7 @@ h3 {
         height: 5800px;
     }
     .title {
-        margin-left: 35%;
+        margin-left: 30%;
     }
 }
 @media only screen and (min-width: 1000px) {
@@ -178,9 +177,6 @@ h3 {
     .background-svg {
         width: 96%;
     }
-    .title {
-        margin-left: 38%;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -193,5 +189,17 @@ h3 {
     }
     .title {
         margin-left: 30%;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        line-height: 5vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .title {
+        margin-left: 28%;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        line-height: 5vh;
     }
 }
