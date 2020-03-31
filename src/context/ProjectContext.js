@@ -45,21 +45,6 @@ export const ProjectProvider = props => {
                 "This page demonstrates how different sorting algorithms work, how long do they take. You can watch an animation of the sorts, and set the array's size and speed"
         },
         {
-            name: "Spotify Music Guesser",
-            id: "spotify-music-guesser",
-            featured: true,
-            link: "https://github.com/abelHodasz/spotify-music-guesser",
-            gitHubLink: "https://github.com/abelHodasz/spotify-music-guesser",
-            page: "/projects/spotify-music-guesser",
-            category: tech.react.shortName,
-            logo: tech.react.icon,
-            image: spotifyImage,
-            imageMobile: spotifyMobileImage,
-            technologies: [tech.react, tech.sass],
-            description:
-                "It's a music guessing game. You have to create 2 teams and each round 1 team guesses the name of the track that is playing. You can use predefined playlists or your own playlists."
-        },
-        {
             name: "Sound Visualization",
             id: "sound-visualization",
             featured: false,
@@ -100,6 +85,20 @@ export const ProjectProvider = props => {
             technologies: [tech.p5],
             description:
                 "This app is a very simple labirinth generator. It randomly choses a forward slash or a backwards slash for every spot, generating some amazing patterns."
+        },
+        {
+            name: "Bouncing Dvd Logo",
+            id: "bouncing-dvd",
+            featured: false,
+            link: "https://editor.p5js.org/hodabi/sketches/i89GRFBz7",
+            page: "/projects/bouncing-dvd",
+            logo: tech.p5.icon,
+            category: tech.p5.shortName,
+            image: bouncingDvdImage,
+            imageMobile: bouncingDvdImage,
+            technologies: [tech.p5],
+            description:
+                "Everybody remembers old tv's screensavers. You were always waiting for the logo to bounce in the corner. But when it finally does..."
         }
     ];
     const [state, setState] = useState(projects);
