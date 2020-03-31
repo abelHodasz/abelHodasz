@@ -1,0 +1,10 @@
+.background-container {
+    z-index: -3;
+    position: fixed;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
