@@ -9,6 +9,7 @@ import labirinthImage from "../static/images/labirinth.png";
 import reactIcon from "../static/icons/react.svg";
 import jsIcon from "../static/icons/js.png";
 import p5Icon from "../static/icons/p5js.svg";
+import sassIcon from "../static/icons/sass.svg";
 
 export const ProjectContext = createContext();
 
@@ -24,7 +25,7 @@ export const ProjectProvider = props => {
         jwt: { shortName: "jwt", name: "Jwt", icon: null },
         ef: { shortName: "ef", name: "Entity Framework", icon: null },
         material: { shortName: "material", name: "Material-ui", icon: null },
-        sass: { shortName: "sass", name: "Sass", icon: null }
+        sass: { shortName: "sass", name: "Sass", icon: sassIcon }
     };
 
     const projects = [
@@ -44,6 +45,21 @@ export const ProjectProvider = props => {
                 "This page demonstrates how different sorting algorithms work, how long do they take. You can watch an animation of the sorts, and set the array's size and speed"
         },
         {
+            name: "Spotify Music Guesser",
+            id: "spotify-music-guesser",
+            featured: true,
+            link: "https://github.com/abelHodasz/spotify-music-guesser",
+            gitHubLink: "https://github.com/abelHodasz/spotify-music-guesser",
+            page: "/projects/spotify-music-guesser",
+            category: tech.react.shortName,
+            logo: tech.react.icon,
+            image: spotifyImage,
+            imageMobile: spotifyMobileImage,
+            technologies: [tech.react, tech.sass],
+            description:
+                "It's a music guessing game. You have to create 2 teams and each round 1 team guesses the name of the track that is playing. You can use predefined playlists or your own playlists."
+        },
+        {
             name: "Sound Visualization",
             id: "sound-visualization",
             featured: false,
@@ -52,7 +68,10 @@ export const ProjectProvider = props => {
             logo: tech.p5.icon,
             category: tech.p5.shortName,
             image: soundVisualizationImage,
-            imageMobile: soundVisualizationImage
+            imageMobile: soundVisualizationImage,
+            technologies: [tech.p5],
+            description:
+                "When you click on the page, a song starts playing. This app visualizes the volume of the song in a nice way."
         },
         {
             name: "Perlin Noise Paint",
@@ -63,7 +82,10 @@ export const ProjectProvider = props => {
             logo: tech.p5.icon,
             category: tech.p5.shortName,
             image: perlinNoiseImage,
-            imageMobile: perlinNoiseImage
+            imageMobile: perlinNoiseImage,
+            technologies: [tech.p5],
+            description:
+                "This is a paint app, that generates colors, baised on perlin-noise. When you release the mouseButton, a new color gets chosen. You can paint interesting patterns."
         },
         {
             name: "Labirinth Generator",
@@ -74,18 +96,10 @@ export const ProjectProvider = props => {
             logo: tech.p5.icon,
             category: tech.p5.shortName,
             image: labirinthImage,
-            imageMobile: labirinthImage
-        },
-        {
-            name: "Bouncing Dvd Logo",
-            id: "bouncing-dvd",
-            featured: false,
-            link: "https://editor.p5js.org/hodabi/sketches/ej77xKyp7",
-            page: "/projects/bouncing-dvd",
-            logo: tech.p5.icon,
-            category: tech.p5.shortName,
-            image: bouncingDvdImage,
-            imageMobile: bouncingDvdImage
+            imageMobile: labirinthImage,
+            technologies: [tech.p5],
+            description:
+                "This app is a very simple labirinth generator. It randomly choses a forward slash or a backwards slash for every spot, generating some amazing patterns."
         }
     ];
     const [state, setState] = useState(projects);
