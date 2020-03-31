@@ -6,11 +6,10 @@ $light-grey: #f2f3f7;
 $dark-grey: #23232e;
 $darkest-grey: #1c1c24;
 $dark-blue: #00a6d4;
-
 $top-color: #f2f3f7;
 $middle-color: #92cfcc;
 $bottom-color: #4db1a7;
-$background-color: #318291;
+$background-color: $light-grey;
 
 :root {
     font-size: 16px;
@@ -39,11 +38,6 @@ body {
     &::-webkit-scrollbar-thumb {
         background: $light-blue;
         border-radius: 3px;
-    }
-
-    .background-container {
-        height: 100%;
-        overflow: hidden;
     }
 
     .background-svg {

@@ -10,7 +10,7 @@
 
 body {
   color: black;
-  background-color: #318291;
+  background-color: #f2f3f7;
   padding: 0 !important;
   margin: 0 !important;
   -webkit-box-sizing: border-box;
@@ -28,11 +28,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #48c7eb;
   border-radius: 3px;
-}
-
-body .background-container {
-  height: 100%;
-  overflow: hidden;
 }
 
 body .background-svg {
