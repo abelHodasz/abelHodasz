@@ -5,15 +5,17 @@ import soundVisualizationImage from "../static/images/soundVisualization.png";
 import perlinNoiseImage from "../static/images/perlinNoisePaint.png";
 import bouncingDvdImage from "../static/images/bouncingDvd.png";
 import labirinthImage from "../static/images/labirinth.png";
+import basicCharacterImage from "../static/images/basicCharacterImage.png";
 
 import reactIcon from "../static/icons/react.svg";
 import jsIcon from "../static/icons/js.png";
 import p5Icon from "../static/icons/p5js.svg";
 import sassIcon from "../static/icons/sass.svg";
+import unityIcon from "../static/icons/unityIcon.png";
 
 export const ProjectContext = createContext();
 
-export const ProjectProvider = props => {
+export const ProjectProvider = (props) => {
     const tech = {
         react: { shortName: "react", name: "React", icon: reactIcon },
         js: { shortName: "js", name: "JavaScript", icon: jsIcon },
@@ -25,7 +27,8 @@ export const ProjectProvider = props => {
         jwt: { shortName: "jwt", name: "Jwt", icon: null },
         ef: { shortName: "ef", name: "Entity Framework", icon: null },
         material: { shortName: "material", name: "Material-ui", icon: null },
-        sass: { shortName: "sass", name: "Sass", icon: sassIcon }
+        sass: { shortName: "sass", name: "Sass", icon: sassIcon },
+        unity: { shortName: "unity", name: "Unity", icon: unityIcon },
     };
 
     const projects = [
@@ -42,7 +45,21 @@ export const ProjectProvider = props => {
             imageMobile: sortingImageMobile,
             technologies: [tech.sass, tech.js],
             description:
-                "This page demonstrates how different sorting algorithms work, how long do they take. You can watch an animation of the sorts, and set the array's size and speed"
+                "This page demonstrates how different sorting algorithms work, how long do they take. You can watch an animation of the sorts, and set the array's size and speed",
+        },
+        {
+            name: "Basic Character Controll - Unity",
+            id: "basic-character",
+            featured: true,
+            link: "https://basic-character-controll-unity.netlify.com/",
+            page: "/projects/basic-character",
+            category: tech.unity.shortName,
+            logo: tech.unity.icon,
+            image: basicCharacterImage,
+            imageMobile: basicCharacterImage,
+            technologies: [tech.unity],
+            description:
+                "With this little application, I got to know the basics of the Unity engine and how animation works in unity. Also I had a bit of fun drawing some pixel art.",
         },
         {
             name: "Sound Visualization",
@@ -56,7 +73,7 @@ export const ProjectProvider = props => {
             imageMobile: soundVisualizationImage,
             technologies: [tech.p5],
             description:
-                "When you click on the page, a song starts playing. This app visualizes the volume of the song in a nice way."
+                "When you click on the page, a song starts playing. This app visualizes the volume of the song in a nice way.",
         },
         {
             name: "Perlin Noise Paint",
@@ -70,7 +87,7 @@ export const ProjectProvider = props => {
             imageMobile: perlinNoiseImage,
             technologies: [tech.p5],
             description:
-                "This is a paint app, that generates colors, baised on perlin-noise. When you release the mouseButton, a new color gets chosen. You can paint interesting patterns."
+                "This is a paint app, that generates colors, baised on perlin-noise. When you release the mouseButton, a new color gets chosen. You can paint interesting patterns.",
         },
         {
             name: "Labirinth Generator",
@@ -84,7 +101,7 @@ export const ProjectProvider = props => {
             imageMobile: labirinthImage,
             technologies: [tech.p5],
             description:
-                "This app is a very simple labirinth generator. It randomly choses a forward slash or a backwards slash for every spot, generating some amazing patterns."
+                "This app is a very simple labirinth generator. It randomly choses a forward slash or a backwards slash for every spot, generating some amazing patterns.",
         },
         {
             name: "Bouncing Dvd Logo",
@@ -98,8 +115,8 @@ export const ProjectProvider = props => {
             imageMobile: bouncingDvdImage,
             technologies: [tech.p5],
             description:
-                "Everybody remembers old tv's screensavers. You were always waiting for the logo to bounce in the corner. But when it finally does..."
-        }
+                "Everybody remembers old tv's screensavers. You were always waiting for the logo to bounce in the corner. But when it finally does...",
+        },
     ];
     const [state, setState] = useState(projects);
 
