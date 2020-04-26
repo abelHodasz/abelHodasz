@@ -18,7 +18,7 @@
 
 .home-header {
   height: 30%;
-  margin: 10px 1  0vw;
+  margin: 10px 1 0vw;
   font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,7 +70,7 @@
     height: calc(80vh - 5rem);
   }
   .home-header {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .home-header :nth-child(3) {
     margin-left: 20px;

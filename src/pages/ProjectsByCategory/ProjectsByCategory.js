@@ -2,14 +2,14 @@ import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useContext } from "react";
 import { ProjectContext } from "../../context/ProjectContext";
-import ProjectSlider from "../../components/ProjectSlider/ProjectSlider";
+import AllProjects from "../../components/AllProjects/AllProjects";
 import BackIcon from "@material-ui/icons/ArrowBackIosOutlined";
 
 export default function ProjectsByCategory() {
     const history = useHistory();
     const { category } = useParams();
     const projects = useContext(ProjectContext)[0].filter(
-        proj => proj.category === category
+        (proj) => proj.category === category
     );
     if (!projects.length) {
         return (
@@ -38,7 +38,7 @@ export default function ProjectsByCategory() {
                 </span>
             </span>
             <div className="projects-container">
-                <ProjectSlider projects={projects} />
+                <AllProjects projects={projects} />
             </div>
         </div>
     );
