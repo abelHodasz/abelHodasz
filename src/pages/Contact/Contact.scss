@@ -1,0 +1,29 @@
+$light-blue: rgba(72, 199, 235, 1);
+$dark-blue: #00a6d4;
+
+.contact-list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-item {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    .contact-img {
+        margin: 10px;
+        width: 4rem;
+        height: auto;
+    }
+
+    .contact-link {
+        text-decoration: none;
+        color: $dark-blue;
+        font-size: 1.5rem;
+    }
+
+    .contact-text {
+        font-family: "Comfortaa", cursive;
+    }
+}

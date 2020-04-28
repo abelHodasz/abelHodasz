@@ -14,7 +14,7 @@ export default function Project(props) {
     const technologiesJSX = project.technologies ? (
         project.technologies.map((tech) => (
             <span key={tech.name}>
-                <img className="tech-logo" src={tech.icon} alt="" />
+                <img className="tech-logo" src={tech.icon} alt={tech.name} />
                 <p>{tech.name}</p>
             </span>
         ))
