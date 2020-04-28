@@ -4,17 +4,17 @@ import { useContext } from "react";
 import { ProjectContext } from "../../context/ProjectContext";
 import BackIcon from "@material-ui/icons/ArrowBackIosOutlined";
 import "./Project.css";
-import NemorphicButton from "../../components/NeumorphicButton/NemorphicButton";
+import NeumorphicButton from "../../components/NeumorphicButton/NemorphicButton";
 
 export default function Project(props) {
     const history = useHistory();
     const { id } = useParams();
-    const project = useContext(ProjectContext)[0].find(proj => proj.id == id);
+    const project = useContext(ProjectContext)[0].find((proj) => proj.id == id);
 
     const technologiesJSX = project.technologies ? (
-        project.technologies.map(tech => (
+        project.technologies.map((tech) => (
             <span key={tech.name}>
-                <img className="tech-logo" src={tech.icon} alt="" />
+                <img className="tech-logo" src={tech.icon} alt={tech.name} />
                 <p>{tech.name}</p>
             </span>
         ))
@@ -59,19 +59,19 @@ export default function Project(props) {
                     </span>
                     <span className="sp-links">
                         {project.gitHubLink ? (
-                            <NemorphicButton
+                            <NeumorphicButton
                                 onClick={() => window.open(project.gitHubLink)}
                             >
                                 Code
-                            </NemorphicButton>
+                            </NeumorphicButton>
                         ) : (
                             <Fragment />
                         )}
-                        <NemorphicButton
+                        <NeumorphicButton
                             onClick={() => window.open(project.link)}
                         >
                             App
-                        </NemorphicButton>
+                        </NeumorphicButton>
                     </span>
                 </div>
             </span>

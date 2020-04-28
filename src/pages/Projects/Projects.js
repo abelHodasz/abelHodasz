@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ProjectSlider from "../../components/ProjectSlider/ProjectSlider";
+import AllProjects from "../../components/AllProjects/AllProjects";
 import "./Projects.css";
 import { ProjectContext } from "../../context/ProjectContext";
 import { useHistory } from "react-router-dom";
@@ -19,7 +19,7 @@ export default function Projects() {
                 </span>
             </span>
             <div className="projects-container">
-                <ProjectSlider projects={projects} />
+                <AllProjects projects={projects} />
             </div>
         </div>
     );

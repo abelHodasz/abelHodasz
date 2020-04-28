@@ -1,0 +1,34 @@
+.contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-item {
+  margin: 1.5rem;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-item .contact-img {
+  margin: 10px;
+  width: 4rem;
+  height: auto;
+}
+
+.contact-item .contact-link {
+  text-decoration: none;
+  color: #00a6d4;
+  font-size: 1.5rem;
+}
+
+.contact-item .contact-text {
+  font-family: "Comfortaa", cursive;
+}
+/*# sourceMappingURL=Contact.css.map */
