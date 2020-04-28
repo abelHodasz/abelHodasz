@@ -20,6 +20,10 @@ $background-color: $light-grey;
     font-family: "Roboto";
 }
 
+html {
+    overflow-y: scroll;
+}
+
 body {
     color: black;
     background-color: $background-color;

@@ -3,13 +3,14 @@
   border: 1.5px solid #7e7ea3f1;
   margin: 2rem;
   overflow: hidden;
-  border-radius: 0.1rem;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+  border-radius: 2rem;
+  height: auto;
+  -webkit-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
 }
 
 .card .card-header {
-  margin: 1rem;
+  padding: 1rem 1rem 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,10 +23,16 @@
 }
 
 .card .card-header .header-icon {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   margin-right: 0.5rem;
 }
 
 .card .card-text {
+  line-height: 1.5rem;
+  letter-spacing: 1px;
   margin: 1rem;
 }
 /*# sourceMappingURL=Card.css.map */

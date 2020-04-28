@@ -8,6 +8,10 @@
   font-family: "Roboto";
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   color: black;
   background-color: #f2f3f7;

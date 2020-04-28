@@ -5,10 +5,11 @@ $medium-grey: #7e7ea3f1;
     border: 1.5px solid $medium-grey;
     margin: 2rem;
     overflow: hidden;
-    border-radius: 0.1rem;
-    transition: all 500ms ease;
+    border-radius: 2rem;
+    height: auto;
+    transition: max-height 0.5s ease;
     .card-header {
-        margin: 1rem;
+        padding: 1rem 1rem 0 1rem;
         display: flex;
         height: 1.2rem;
         cursor: pointer;
@@ -16,10 +17,13 @@ $medium-grey: #7e7ea3f1;
             height: 100%;
         }
         .header-icon {
+            transition: transform 0.3s ease;
             margin-right: 0.5rem;
         }
     }
     .card-text {
+        line-height: 1.5rem;
+        letter-spacing: 1px;
         margin: 1rem;
     }
 }

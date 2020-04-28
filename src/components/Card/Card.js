@@ -6,35 +6,34 @@ import { CSSTransition } from "react-transition-group";
 
 export default function Card(props) {
     const [open, setOpen] = useState(false);
-    const [cardHeight, setCardHeight] = useState(null);
+    const [cardHeight, setCardHeight] = useState("3.2rem");
 
-    function calcHeight(el) {
-        const height = el.offsetHeight;
-        setCardHeight(height);
-    }
+    useEffect(() => {
+        open ? setCardHeight(800) : setCardHeight("3.2rem");
+    }, [open]);
 
     return (
-        <div
-            className="card"
-            style={
-                {
-                    /*height: cardHeight*/
-                }
-            }
-        >
-            <div className="card-header" onClick={() => setOpen(!open)}>
-                <ArrowIcon
-                    className="header-icon"
-                    fontSize="small"
-                    style={{ transform: "rotate(" + (open ? 90 : 0) + "deg)" }}
-                />
-                <h3 className="header-text">{props.header}</h3>
-            </div>
-            {open && (
+        <div>
+            <div
+                className="card"
+                style={{
+                    maxHeight: cardHeight,
+                }}
+            >
+                <div className="card-header" onClick={() => setOpen(!open)}>
+                    <ArrowIcon
+                        className="header-icon"
+                        fontSize="small"
+                        style={{
+                            transform: "rotate(" + (open ? 90 : 0) + "deg)",
+                        }}
+                    />
+                    <h3 className="header-text">{props.header}</h3>
+                </div>
                 <div className="card-text">
                     <p>{props.children}</p>
                 </div>
-            )}
+            </div>
         </div>
     );
 }
