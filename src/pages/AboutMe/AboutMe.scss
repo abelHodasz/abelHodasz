@@ -1,0 +1,10 @@
+.about-me {
+    width: 90%;
+    margin: auto;
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

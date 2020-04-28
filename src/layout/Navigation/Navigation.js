@@ -5,8 +5,8 @@ import Logo from "../../components/AbelHodasz/AbelHodasz";
 import LogoSmall from "../../components/AbelHodaszSmall/AbelHodaszSmall";
 import HomeIcon from "@material-ui/icons/HomeOutlined";
 import AboutIcon from "@material-ui/icons/AccountCircleOutlined";
-import PortfolioIcon from "@material-ui/icons/WorkOutlineOutlined";
-import ProjectsIcon from "@material-ui/icons/PaletteOutlined";
+import ContactIcon from "@material-ui/icons/ContactsOutlined";
+import ProjectsIcon from "@material-ui/icons/WorkOutlineOutlined";
 
 export default function Navigation() {
     const iconSize = 30;
@@ -58,14 +58,14 @@ export default function Navigation() {
                     <NavLink
                         activeClassName="link-active"
                         className="nav-link"
-                        to="/portfolio"
+                        to="/contact"
                         exact
                     >
-                        <PortfolioIcon
+                        <ContactIcon
                             style={{ fontSize: iconSize }}
                             className="nav-icon"
                         />
-                        <span className="link-text">Portfolio</span>
+                        <span className="link-text">Contact</span>
                     </NavLink>
                 </li>
                 <li className="nav-item">

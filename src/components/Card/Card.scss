@@ -1,0 +1,25 @@
+$medium-grey: #7e7ea3f1;
+
+.card {
+    width: 15rem;
+    border: 1.5px solid $medium-grey;
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    transition: all 500ms ease;
+    .card-header {
+        margin: 1rem;
+        display: flex;
+        height: 1.2rem;
+        cursor: pointer;
+        .header-text {
+            height: 100%;
+        }
+        .header-icon {
+            margin-right: 0.5rem;
+        }
+    }
+    .card-text {
+        margin: 1rem;
+    }
+}
