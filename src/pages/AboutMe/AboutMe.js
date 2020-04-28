@@ -7,28 +7,56 @@ export default function () {
         <div className="about-me">
             <h1 className="title">About me</h1>
             <div className="cards">
-                <Card header="Test header">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                <Card
+                    header="Self Definition
+"
+                >
+                    I'm a flexible and calm person who adapts with every
+                    situation and environment well. I try to find the optimal
+                    solution for every problem, I'm a bit of a maximalist. I
+                    like working with other driven people. I think before
+                    talking, and I usually get to the point. I'm honest, but try
+                    not to hurt other's feelings.
                 </Card>
-                <Card header="Test header">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                <Card header="About Me">
+                    I love extreme sports like Canyoning, Via Ferrata,
+                    Snowboarding, Rock Climbing and generally being close to
+                    nature. I play the piano for my (and other's) entertainment
+                    and have a passion for music. I'm happy to play a board game
+                    with my friends in my freetime.
                 </Card>
-                <Card header="Test header">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                <Card header="Main Interests">
+                    My main interest is in front end web development but I like
+                    being challenged and learn interesting current technologies
+                    (Machine learning, Cloud, Game Development). My strongest
+                    skills are in React, JavaScipt, and C#. I also have some
+                    experience in Python, Java, and Unity.
+                </Card>
+                <Card header="Hard Skills">
+                    <ul>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>Git</li>
+                        <li>Html, Css</li>
+                        <li>Python</li>
+                    </ul>
+                </Card>
+                <Card header="Soft Skills">
+                    <ul>
+                        <li>Agility</li>
+                        <li>Listening</li>
+                        <li>Growth Mindset</li>
+                        <li>Time management</li>
+                        <li>Teamwork</li>
+                        <li>Presentation</li>
+                    </ul>
+                </Card>
+                <Card header="Other Skills">
+                    I have experience in Adobe Programs (Photoshop, Premiere
+                    Pro, Illustrator) and I have created a few Wordpress sites
+                    for clients. I also worked with the Unity engine and the
+                    three.js library.
                 </Card>
             </div>
         </div>

@@ -9,7 +9,7 @@ export default function Card(props) {
     const [cardHeight, setCardHeight] = useState("3.2rem");
 
     useEffect(() => {
-        open ? setCardHeight(800) : setCardHeight("3.2rem");
+        open ? setCardHeight(400) : setCardHeight("3.2rem");
     }, [open]);
 
     return (
