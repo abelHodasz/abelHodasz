@@ -9,8 +9,8 @@ export default function Contact() {
     return (
         <div className="contact-page">
             <h1 className="title">Contact</h1>
-            <ul className="contact-list">
-                <li className="contact-item">
+            <div className="contact-list">
+                <div className="contact-item">
                     <Neumorphic
                         onClick={(e) =>
                             window.open("https://github.com/abelHodasz")
@@ -24,8 +24,8 @@ export default function Contact() {
 
                         <p className="contact-text">abelHodasz</p>
                     </Neumorphic>
-                </li>
-                <li className="contact-item">
+                </div>
+                <div className="contact-item">
                     <Neumorphic
                         onClick={(e) =>
                             window.open(
@@ -40,8 +40,8 @@ export default function Contact() {
                         />
                         <p className="contact-text">abel-hodasz</p>
                     </Neumorphic>
-                </li>
-                <li className="contact-item">
+                </div>
+                <div className="contact-item">
                     <a href="mailto:hodaszabel@gmail.com">
                         <Neumorphic>
                             <img
@@ -53,8 +53,8 @@ export default function Contact() {
                             <p className="contact-text">hodaszabel@gmail.com</p>
                         </Neumorphic>
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     );
 }
