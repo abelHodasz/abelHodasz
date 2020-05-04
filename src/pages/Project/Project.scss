@@ -19,6 +19,7 @@
         justify-content: space-around;
         align-items: center;
         span {
+            margin: 3px;
             text-align: center;
         }
     }
@@ -81,6 +82,7 @@
             .sp-description {
                 width: 75%;
                 height: 70%;
+                font-size: 1rem;
             }
             .sp-technologies {
                 height: 20%;
