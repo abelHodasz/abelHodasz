@@ -2,6 +2,7 @@ import React, { useContext, Fragment } from "react";
 import { ProjectContext } from "../../context/ProjectContext";
 import "./AllProjects.css";
 import gitHubIcon from "../../static/icons/gitHubIcon.png";
+import azureIcon from "../../static/icons/azureIcon.png";
 import { useHistory } from "react-router-dom";
 
 export default function AllProjects(props) {
@@ -31,19 +32,33 @@ export default function AllProjects(props) {
                 <a href={project.page}>
                     <h3>{project.name}</h3>
                 </a>
-                {project.gitHubLink ? (
+                {project.gitHubLink || project.azureLink ? (
                     <span className="github-icon-container">
-                        <a
-                            href={project.gitHubLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                className="github-icon"
-                                src={gitHubIcon}
-                                alt="gitHub"
-                            ></img>
-                        </a>
+                        {project.gitHubLink ? (
+                            <a
+                                href={project.gitHubLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    className="github-icon"
+                                    src={gitHubIcon}
+                                    alt="gitHub"
+                                ></img>
+                            </a>
+                        ) : (
+                            <a
+                                href={project.azureLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    className="github-icon"
+                                    src={azureIcon}
+                                    alt="azure"
+                                ></img>
+                            </a>
+                        )}
                     </span>
                 ) : (
                     <Fragment />
@@ -52,7 +67,9 @@ export default function AllProjects(props) {
             <div
                 className="project-container"
                 onClick={() => {
-                    window.open(project.link);
+                    project.link
+                        ? window.open(project.link)
+                        : history.push(project.page);
                 }}
             >
                 <img

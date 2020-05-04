@@ -58,20 +58,27 @@ export default function Project(props) {
                         <img src={project.image} alt="screenshot" />
                     </span>
                     <span className="sp-links">
-                        {project.gitHubLink ? (
+                        {project.gitHubLink && (
                             <NeumorphicButton
                                 onClick={() => window.open(project.gitHubLink)}
                             >
                                 Code
                             </NeumorphicButton>
-                        ) : (
-                            <Fragment />
                         )}
-                        <NeumorphicButton
-                            onClick={() => window.open(project.link)}
-                        >
-                            App
-                        </NeumorphicButton>
+                        {project.azureLink && (
+                            <NeumorphicButton
+                                onClick={() => window.open(project.azureLink)}
+                            >
+                                Code
+                            </NeumorphicButton>
+                        )}
+                        {project.link && (
+                            <NeumorphicButton
+                                onClick={() => window.open(project.link)}
+                            >
+                                App
+                            </NeumorphicButton>
+                        )}
                     </span>
                 </div>
             </span>

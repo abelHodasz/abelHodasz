@@ -7,11 +7,21 @@ import bouncingDvdImage from "../static/images/bouncingDvd.png";
 import labirinthImage from "../static/images/labirinth.png";
 import basicCharacterImage from "../static/images/basicCharacterImage.png";
 
+import studyStud from "../static/images/studyStud.png";
+
+import studyStudMobile from "../static/images/studyStudMobile.png";
+
 import reactIcon from "../static/icons/react.svg";
 import jsIcon from "../static/icons/js.png";
 import p5Icon from "../static/icons/p5js.svg";
 import sassIcon from "../static/icons/sass.svg";
 import unityIcon from "../static/icons/unityIcon.png";
+import aspIcon from "../static/icons/aspIcon.png";
+import dotnetIcon from "../static/icons/dotnetIcon.png";
+import gitIcon from "../static/icons/gitIcon.png";
+import efIcon from "../static/icons/efIcon.png";
+import materialIcon from "../static/icons/materialIcon.png";
+import jwtIcon from "../static/icons/jwtIcon.png";
 
 export const ProjectContext = createContext();
 
@@ -21,12 +31,16 @@ export const ProjectProvider = (props) => {
         js: { shortName: "js", name: "JavaScript", icon: jsIcon },
         p5: { shortName: "p5", name: "p5.js", icon: p5Icon },
 
-        git: { shortName: "git", name: "Git", icon: null },
-        asp: { shortName: "asp", name: "ASP .NET", icon: null },
-        dotnet: { shortName: "dotnet", name: ".NET", icon: null },
-        jwt: { shortName: "jwt", name: "Jwt", icon: null },
-        ef: { shortName: "ef", name: "Entity Framework", icon: null },
-        material: { shortName: "material", name: "Material-ui", icon: null },
+        git: { shortName: "git", name: "Git", icon: gitIcon },
+        asp: { shortName: "asp", name: "ASP .NET", icon: aspIcon },
+        dotnet: { shortName: "dotnet", name: ".NET", icon: dotnetIcon },
+        jwt: { shortName: "jwt", name: "Jwt", icon: jwtIcon },
+        ef: { shortName: "ef", name: "Entity Framework", icon: efIcon },
+        material: {
+            shortName: "material",
+            name: "Material-ui",
+            icon: materialIcon,
+        },
         sass: { shortName: "sass", name: "Sass", icon: sassIcon },
         unity: { shortName: "unity", name: "Unity", icon: unityIcon },
     };
@@ -46,6 +60,28 @@ export const ProjectProvider = (props) => {
             technologies: [tech.sass, tech.js],
             description:
                 "This page demonstrates how different sorting algorithms work, how long do they take. You can watch an animation of the sorts, and set the array's size and speed",
+        },
+        {
+            name: "Study stud",
+            id: "study-stud",
+            featured: true,
+            azureLink:
+                "https://hodaszAbel@dev.azure.com/hodaszAbel/ASP%20.NET%20-%20React%20-%20Social%20Media/_git/study-stud-react",
+            page: "/projects/study-stud",
+            category: tech.react.shortName,
+            logo: tech.react.icon,
+            image: studyStud,
+            imageMobile: studyStudMobile,
+            technologies: [
+                tech.react,
+                tech.sass,
+                tech.dotnet,
+                tech.asp,
+                tech.ef,
+                tech.git,
+            ],
+            description:
+                "This is a web application for students. You have to register/login to view the page. If you are logged in you can create groups of related topics. Post materials and comment on topics. It's an easy way for students to collect notes for a subject or topic.",
         },
         {
             name: "Basic Character Controll - Unity",
