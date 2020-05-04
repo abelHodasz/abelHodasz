@@ -11,21 +11,25 @@ export default function Contact() {
             <h1 className="title">Contact</h1>
             <div className="contact-list">
                 <div className="contact-item">
+                    <img
+                        className="contact-img"
+                        src={GithubIcon}
+                        alt="github"
+                    />
                     <Neumorphic
                         onClick={(e) =>
                             window.open("https://github.com/abelHodasz")
                         }
                     >
-                        <img
-                            className="contact-img"
-                            src={GithubIcon}
-                            alt="github"
-                        />
-
                         <p className="contact-text">abelHodasz</p>
                     </Neumorphic>
                 </div>
                 <div className="contact-item">
+                    <img
+                        className="contact-img"
+                        src={LinkedInIcon}
+                        alt="linkedin"
+                    />
                     <Neumorphic
                         onClick={(e) =>
                             window.open(
@@ -33,23 +37,17 @@ export default function Contact() {
                             )
                         }
                     >
-                        <img
-                            className="contact-img"
-                            src={LinkedInIcon}
-                            alt="linkedin"
-                        />
                         <p className="contact-text">abel-hodasz</p>
                     </Neumorphic>
                 </div>
                 <div className="contact-item">
+                    <img
+                        className="contact-img"
+                        src={GmailIcon}
+                        alt="linkedin"
+                    />
                     <a href="mailto:hodaszabel@gmail.com">
                         <Neumorphic>
-                            <img
-                                className="contact-img"
-                                src={GmailIcon}
-                                alt="linkedin"
-                            />
-
                             <p className="contact-text">hodaszabel@gmail.com</p>
                         </Neumorphic>
                     </a>

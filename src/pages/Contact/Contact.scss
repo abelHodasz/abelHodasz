@@ -10,6 +10,8 @@ $dark-blue: #00a6d4;
     margin: 1.5rem;
     list-style: none;
     align-items: center;
+    display: flex;
+    flex-direction: column;
     .contact-img {
         margin: 10px;
         width: 4rem;
