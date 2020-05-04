@@ -6,6 +6,7 @@
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 90%;
 }
 
 .contact-item {
@@ -21,6 +22,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 25%;
 }
 
 .contact-item .contact-img {
