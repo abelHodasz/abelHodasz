@@ -1,5 +1,6 @@
 #home {
   max-width: 1300px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
