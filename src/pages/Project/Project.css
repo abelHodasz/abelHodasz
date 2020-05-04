@@ -100,7 +100,7 @@
     height: 60%;
   }
   .single-project-container .sp-image-container .sp-image img {
-    max-height: 480px;
+    max-height: 400px;
     border-radius: 5px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -133,6 +133,7 @@
     height: 70%;
   }
   .single-project-container .sp-image-container .sp-image img {
+    max-height: 300px;
     border-radius: 5px;
     -o-object-fit: cover;
        object-fit: cover;
