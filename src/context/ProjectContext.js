@@ -6,6 +6,8 @@ import perlinNoiseImage from "../static/images/perlinNoisePaint.png";
 import bouncingDvdImage from "../static/images/bouncingDvd.png";
 import labirinthImage from "../static/images/labirinth.png";
 import basicCharacterImage from "../static/images/basicCharacterImage.png";
+import spotify from "../static/images/spotifyMusicGuesser.png";
+import spotifyMobile from "../static/images/spotifyMusicGuesserMobile.png";
 
 import studyStud from "../static/images/studyStud.png";
 
@@ -22,6 +24,7 @@ import gitIcon from "../static/icons/gitIcon.png";
 import efIcon from "../static/icons/efIcon.png";
 import materialIcon from "../static/icons/materialIcon.png";
 import jwtIcon from "../static/icons/jwtIcon.png";
+import nodeIcon from "../static/icons/nodeIcon.png";
 
 export const ProjectContext = createContext();
 
@@ -43,9 +46,25 @@ export const ProjectProvider = (props) => {
         },
         sass: { shortName: "sass", name: "Sass", icon: sassIcon },
         unity: { shortName: "unity", name: "Unity", icon: unityIcon },
+
+        node: { shortName: "node", name: "Node.Js", icon: nodeIcon },
     };
 
     const projects = [
+        {
+            name: "Spotify Music Guesser",
+            id: "spotify-music-guesser",
+            featured: true,
+            gitHubLink: "https://github.com/abelHodasz/spotify-music-guesser",
+            page: "/projects/spotify-music-guesser",
+            category: tech.react.shortName,
+            logo: tech.react.icon,
+            image: spotify,
+            imageMobile: spotifyMobile,
+            technologies: [tech.react, tech.material, tech.node],
+            description:
+                "It's a music guessing game. You have to create 2 teams and each round 1 team guesses the name of the track that is playing. You can use predefined playlists or your own playlists. If you have any questions, contact me on github. Have fun!",
+        },
         {
             name: "Sorting Algorithms",
             id: "sorting-algorithms",
@@ -74,7 +93,7 @@ export const ProjectProvider = (props) => {
             imageMobile: studyStudMobile,
             technologies: [
                 tech.react,
-                tech.sass,
+                tech.material,
                 tech.dotnet,
                 tech.asp,
                 tech.ef,
