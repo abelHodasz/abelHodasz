@@ -15,6 +15,9 @@ export default function Contact() {
                         className="contact-img"
                         src={GithubIcon}
                         alt="github"
+                        onClick={(e) =>
+                            window.open("https://github.com/abelHodasz")
+                        }
                     />
                     <Neumorphic
                         onClick={(e) =>
@@ -29,6 +32,11 @@ export default function Contact() {
                         className="contact-img"
                         src={LinkedInIcon}
                         alt="linkedin"
+                        onClick={(e) =>
+                            window.open(
+                                "https://www.linkedin.com/in/abel-hodasz/"
+                            )
+                        }
                     />
                     <Neumorphic
                         onClick={(e) =>
