@@ -85,7 +85,7 @@ export default function Resources() {
                         name="Optimizilla"
                         img={optimizilla}
                     >
-                        Online image copmressor
+                        Online image compressor
                     </Resource>
                     <Resource
                         link="https://loremipsum.io/"
