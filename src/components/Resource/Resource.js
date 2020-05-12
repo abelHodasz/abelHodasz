@@ -12,7 +12,12 @@ export default function Resource(props) {
                     alt={props.name}
                 ></img>
             </div>
-            <a className="resource-link" href={props.link}>
+            <a
+                className="resource-link"
+                href={props.link}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 {props.name}
             </a>
             <p>{props.children}</p>
