@@ -1,0 +1,33 @@
+.resources {
+    margin: 5%;
+}
+
+.scrollers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.resource-header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.resource-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+@media only screen and (min-width: 800px) {
+    .resource {
+        width: 20%;
+        margin: 5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .resource {
+        width: 100%;
+    }
+}
