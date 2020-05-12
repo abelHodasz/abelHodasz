@@ -1,0 +1,19 @@
+.resource-link {
+  color: #00a6d4;
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+}
+
+.resource-link:hover {
+  color: #48c7eb;
+}
+
+.resource {
+  margin-top: 30px;
+}
+
+.resource-img {
+  border-radius: 2px;
+  margin: 10px 0;
+}
+/*# sourceMappingURL=Resource.css.map */

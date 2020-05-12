@@ -1,0 +1,41 @@
+.resources {
+  margin: 5%;
+}
+
+.scrollers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.resource-header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.resource-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .resource {
+    width: 20%;
+    margin: 5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .resource {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Resources.css.map */
