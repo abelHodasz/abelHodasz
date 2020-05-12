@@ -7,6 +7,7 @@ import HomeIcon from "@material-ui/icons/HomeOutlined";
 import AboutIcon from "@material-ui/icons/AccountCircleOutlined";
 import ContactIcon from "@material-ui/icons/ContactsOutlined";
 import ProjectsIcon from "@material-ui/icons/WorkOutlineOutlined";
+import BrushOutlinedIcon from "@material-ui/icons/BrushOutlined";
 
 export default function Navigation() {
     const iconSize = 30;
@@ -80,6 +81,20 @@ export default function Navigation() {
                             className="nav-icon"
                         />
                         <span className="link-text">Projects</span>
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink
+                        activeClassName="link-active"
+                        className="nav-link"
+                        to="/resources"
+                        exact
+                    >
+                        <BrushOutlinedIcon
+                            style={{ fontSize: iconSize }}
+                            className="nav-icon"
+                        />
+                        <span className="link-text">Resources</span>
                     </NavLink>
                 </li>
             </ul>

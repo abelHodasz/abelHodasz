@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home";
 import AboutMe from "../pages/AboutMe/AboutMe";
 import Project from "../pages/Project/Project";
 import Contact from "../pages/Contact/Contact";
+import Resources from "../pages/Resources/Resources";
 import ProjectsByCategory from "../pages/ProjectsByCategory/ProjectsByCategory";
 import Projects from "../pages/Projects/Projects";
 import { ThemeProvider } from "@material-ui/core";
@@ -54,6 +55,11 @@ function Content() {
                                 <Route
                                     path="/projects/:id"
                                     component={Project}
+                                    exact
+                                />
+                                <Route
+                                    path="/resources"
+                                    component={Resources}
                                     exact
                                 />
                                 <Route

@@ -5,7 +5,7 @@ import NemorphicButton from "../../components/NeumorphicButton/NemorphicButton";
 export default function Home() {
     const history = useHistory();
     return (
-        <Fragment>
+        <>
             <h1 className="title">Home</h1>
             <div id="home">
                 <div className="home-header">
@@ -35,6 +35,6 @@ export default function Home() {
                 </div>
                 <div className="home-projects"></div>
             </div>
-        </Fragment>
+        </>
     );
 }
