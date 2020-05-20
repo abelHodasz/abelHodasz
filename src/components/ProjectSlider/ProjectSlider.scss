@@ -1,0 +1,43 @@
+$dark-grey: #23232e;
+
+.slider-image {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+}
+
+.project-slider {
+    width: 70vw;
+    text-align: center;
+
+    .slider-header {
+        cursor: pointer;
+        text-align: center;
+        h4 {
+            margin: auto;
+        }
+    }
+}
+
+.slider-project-container {
+    text-align: center;
+    margin-bottom: 30px;
+    button {
+        &:focus {
+            &:before {
+                opacity: 0.75;
+            }
+        }
+
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+
+        &:before {
+            color: $dark-grey;
+        }
+    }
+}
