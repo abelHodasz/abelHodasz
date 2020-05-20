@@ -1,5 +1,4 @@
-import React, { useContext, Fragment } from "react";
-import { ProjectContext } from "../../context/ProjectContext";
+import React, { Fragment } from "react";
 import "./AllProjects.css";
 import gitHubIcon from "../../static/icons/gitHubIcon.png";
 import azureIcon from "../../static/icons/azureIcon.png";

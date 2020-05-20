@@ -2,7 +2,6 @@ import "./Card.css";
 
 import React, { useState, useEffect } from "react";
 import ArrowIcon from "@material-ui/icons/ArrowForwardIosOutlined";
-import { CSSTransition } from "react-transition-group";
 
 export default function Card(props) {
     const [open, setOpen] = useState(false);
@@ -30,9 +29,7 @@ export default function Card(props) {
                     />
                     <h3 className="header-text">{props.header}</h3>
                 </div>
-                <div className="card-text">
-                    <p>{props.children}</p>
-                </div>
+                <div className="card-text">{props.children}</div>
             </div>
         </div>
     );

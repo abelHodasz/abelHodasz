@@ -1,27 +1,16 @@
 .contact-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 90%;
 }
 
 .contact-item {
   margin: 1.5rem;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 25%;
 }
 
@@ -43,5 +32,14 @@
 
 .contact-item .contact-text {
   font-family: "Comfortaa", cursive;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

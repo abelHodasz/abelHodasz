@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
 import "./AbelHodasz.css";
 import AbelHodaszSmall from "../AbelHodaszSmall/AbelHodaszSmall";
@@ -11,14 +11,14 @@ export default function AbelHodasz(props) {
                 strokeDashoffset: [anime.setDashoffset, 0],
                 easing: "easeInOutSine",
                 duration: 1000,
-                delay: function(el, i) {
+                delay: function (el, i) {
                     return i * 150;
-                }
+                },
             });
             anime({
                 targets: "#abel-hodasz",
                 diration: 200,
-                opacity: 1
+                opacity: 1,
             });
         }
     }, [props.animate]);
