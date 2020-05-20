@@ -1,39 +1,43 @@
-import React, { Fragment } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useContext } from "react";
+
 import "./Home.css";
-import NemorphicButton from "../../components/NeumorphicButton/NemorphicButton";
+import ProjectSlider from "../../components/ProjectSlider/ProjectSlider";
+import { useHistory } from "react-router-dom";
+
+import { ProjectContext } from "../../context/ProjectContext";
+import NeumorphicButton from "../../components/NeumorphicButton/NemorphicButton";
+
 export default function Home() {
+    const projects = useContext(ProjectContext)[0];
     const history = useHistory();
     return (
         <>
             <h1 className="title">Home</h1>
-            <div id="home">
-                <div className="home-header">
-                    <h3 className="home-h3">I design</h3>
-                    <ul className="home-qualities">
-                        <li>
-                            <h3>Simple</h3>
-                        </li>
-                        <li>
-                            <h3>Elegant</h3>
-                        </li>
-                        <li>
-                            <h3>Fast</h3>
-                        </li>
-                    </ul>
-                    <h3>websites with a mobile first approach</h3>
-                </div>
-                <div className="home-about-button">
-                    {" "}
-                    <NemorphicButton
+            <div className="home">
+                <div className="home-introduction">
+                    <div className="home-introduction-text">
+                        <h2 className="home-introduction-header">
+                            Front-end developer
+                        </h2>
+                        <p>Hello, my name is Ábel Hodász!</p>
+                        <p>
+                            I build high quality websites with a focus on user
+                            great experience
+                        </p>
+                    </div>
+                    <NeumorphicButton
                         onClick={() => {
                             history.push("/about-me");
                         }}
                     >
                         More About Me
-                    </NemorphicButton>
+                    </NeumorphicButton>
                 </div>
-                <div className="home-projects"></div>
+                <div className="project-slider-container">
+                    <ProjectSlider
+                        projects={projects.filter((p) => p.featured)}
+                    ></ProjectSlider>
+                </div>
             </div>
         </>
     );
