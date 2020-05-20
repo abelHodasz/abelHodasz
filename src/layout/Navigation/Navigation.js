@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Navigation.css";
 import { NavLink } from "react-router-dom";
 import Logo from "../../components/AbelHodasz/AbelHodasz";
-import LogoSmall from "../../components/AbelHodaszSmall/AbelHodaszSmall";
 import HomeIcon from "@material-ui/icons/HomeOutlined";
 import AboutIcon from "@material-ui/icons/AccountCircleOutlined";
 import ContactIcon from "@material-ui/icons/ContactsOutlined";
