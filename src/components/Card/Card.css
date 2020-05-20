@@ -5,14 +5,11 @@
   overflow: hidden;
   border-radius: 2rem;
   height: auto;
-  -webkit-transition: max-height 0.5s ease;
   transition: max-height 0.5s ease;
 }
 
 .card .card-header {
   padding: 1rem 1rem 0 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 1.2rem;
   cursor: pointer;
@@ -23,10 +20,7 @@
 }
 
 .card .card-header .header-icon {
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   margin-right: 0.5rem;
 }
 

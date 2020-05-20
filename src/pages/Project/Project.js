@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useContext } from "react";
 import { ProjectContext } from "../../context/ProjectContext";
@@ -9,7 +9,9 @@ import NeumorphicButton from "../../components/NeumorphicButton/NemorphicButton"
 export default function Project(props) {
     const history = useHistory();
     const { id } = useParams();
-    const project = useContext(ProjectContext)[0].find((proj) => proj.id == id);
+    const project = useContext(ProjectContext)[0].find(
+        (proj) => proj.id === id
+    );
 
     const technologiesJSX = project.technologies ? (
         project.technologies.map((tech) => (

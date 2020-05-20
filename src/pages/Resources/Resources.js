@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import Scrollers from "../../components/Scrollers/Scrollers";
-import { scroller } from "react-scroll";
 import Resource from "../../components/Resource/Resource";
 import "./Resources.css";
 
@@ -44,6 +43,7 @@ import undraw from "../../static/resourceIcons/undraw.jpg";
 import landbook from "../../static/resourceIcons/land-book.jpg";
 import refactoringguru from "../../static/resourceIcons/refactoringguru.jpg";
 import unsplash from "../../static/resourceIcons/unsplash.jpg";
+import anime from "../../static/resourceIcons/animejs.jpg";
 
 import animate from "../../static/resourceIcons/animate.jpeg";
 
@@ -327,6 +327,14 @@ export default function Resources() {
                 </h2>
                 <div className="resource-section">
                     <Resource
+                        link="https://animejs.com/"
+                        name="Anime.js"
+                        img={anime}
+                    >
+                        Anime.js is a lightweight JavaScript animation library
+                        with a simple, yet powerful API.
+                    </Resource>
+                    <Resource
                         link="https://editorjs.io/"
                         name="Editor.js"
                         img={editor}
@@ -397,7 +405,7 @@ export default function Resources() {
                     </Resource>
                     <Resource
                         link="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets"
-                        name="ES7/React/Redux/GraphQL/React-native snippets"
+                        name="ES7/ React/ Redux/ GraphQL/ React-native snippets"
                         img={reactsnippets}
                     >
                         Provides you JavaScript and React/Redux snippets in ES7

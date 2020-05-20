@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect } from "react";
 import "./App.css";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";

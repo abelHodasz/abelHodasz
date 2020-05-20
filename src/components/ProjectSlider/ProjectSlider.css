@@ -1,1 +1,38 @@
-/* No CSS *//*# sourceMappingURL=ProjectSlider.css.map */
+.slider-image {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+}
+
+.project-slider {
+  width: 70vw;
+  text-align: center;
+}
+
+.project-slider .slider-header {
+  cursor: pointer;
+  text-align: center;
+}
+
+.project-slider .slider-header h4 {
+  margin: auto;
+}
+
+.slider-project-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.slider-project-container button:focus:before {
+  opacity: 0.75;
+}
+
+.slider-project-container button:hover:before {
+  opacity: 1;
+}
+
+.slider-project-container button:before {
+  color: #23232e;
+}
+/*# sourceMappingURL=ProjectSlider.css.map */

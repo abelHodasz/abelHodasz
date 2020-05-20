@@ -1,4 +1,3 @@
-@use 'colors';
 :root {
   font-size: 16px;
   font-family: "Roboto";
@@ -6,6 +5,10 @@
 
 * {
   font-family: "Roboto";
+}
+
+*:focus {
+  outline: none;
 }
 
 html {
@@ -18,8 +21,7 @@ body {
   background-color: #f2f3f7;
   padding: 0 !important;
   margin: 0 !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -61,10 +63,10 @@ body .bottom-background {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   padding: 0;
-  color: #1c1c24;
   font-family: "Comfortaa", cursive;
 }
 
@@ -75,23 +77,17 @@ h1 {
   font-size: 2.5rem;
 }
 
-h3 {
+h3,
+h4 {
   font-weight: 400;
   letter-spacing: 0.6px;
 }
 
 .projects-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 80%;
   margin: 0 auto;
 }
@@ -109,27 +105,19 @@ h3 {
 .link-container {
   height: 5vh;
   font-family: "Comfortaa", cursive;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
+}
+
+.link-container .link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   color: #00a6d4;
 }
 
-.link-container .link a {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.link-container .link a:hover {
+.link-container .link:hover {
   color: #48c7eb;
 }
 

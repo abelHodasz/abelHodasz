@@ -3,7 +3,6 @@ import GithubIcon from "../../static/icons/gitHubIcon.png";
 import LinkedInIcon from "../../static/icons/linkedInIcon.png";
 import "./Contact.css";
 import GmailIcon from "../../static/icons/gmail.png";
-import Neumorphic from "../../components/NeumorphicButton/NemorphicButton";
 
 export default function Contact() {
     return (

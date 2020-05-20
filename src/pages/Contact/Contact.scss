@@ -33,3 +33,12 @@ $dark-blue: #00a6d4;
         font-family: "Comfortaa", cursive;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
