@@ -21,8 +21,8 @@ export default function Home() {
                         </h2>
                         <p>Hello, my name is Ábel Hodász!</p>
                         <p>
-                            I build high quality websites with a focus on user
-                            great experience
+                            I build high quality websites with a focus on great
+                            user experience
                         </p>
                     </div>
                     <NeumorphicButton
