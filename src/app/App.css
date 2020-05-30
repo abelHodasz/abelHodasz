@@ -21,7 +21,8 @@ body {
   background-color: #f2f3f7;
   padding: 0 !important;
   margin: 0 !important;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -84,16 +85,23 @@ h4 {
 }
 
 .projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80%;
   margin: 0 auto;
 }
 
 .back {
-  padding-left: 20%;
+  margin-left: 20%;
 }
 
 .title {
@@ -105,15 +113,23 @@ h4 {
 .link-container {
   height: 5vh;
   font-family: "Comfortaa", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
 }
 
 .link-container .link {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #00a6d4;
 }
 
