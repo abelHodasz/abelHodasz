@@ -1,12 +1,22 @@
+@mixin flexCenterAlign($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+}
+
+@mixin flexCenterJustify($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+}
+
 .single-project-container {
     .tech-logo {
         height: 40px;
         width: auto;
     }
-    display: flex;
-    flex-direction: row;
+    @include flexCenterJustify(row);
     flex-wrap: wrap;
-    justify-content: center;
     margin: 0 10%;
     height: 80vh;
 
@@ -14,30 +24,25 @@
         p {
             font-family: "Comfortaa", cursive;
         }
-        display: flex;
-        flex-direction: row;
+        @include flexCenterAlign(row);
+
         justify-content: space-around;
-        align-items: center;
         span {
-            margin: 3px;
+            margin-top: 3px;
             text-align: center;
         }
     }
     .sp-links {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flexCenterAlign(row);
         justify-content: space-evenly;
     }
     .sp-description-container,
     .sp-image-container {
-        padding-top: 5%;
+        padding-top: 1%;
         .sp-description {
             font-size: 1.3rem;
         }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexCenterAlign(column);
     }
 }
 
@@ -59,11 +64,11 @@
             width: 50%;
             .sp-image {
                 width: 100%;
-                height: 60%;
+                height: 70%;
                 img {
                     max-height: 400px;
                     border-radius: 5px;
-                    object-fit: cover;
+                    object-fit: contain;
                     width: 100%;
                 }
             }
@@ -78,6 +83,7 @@
 
 @media only screen and (max-width: 1000px) {
     .single-project-container {
+        padding-bottom: 5%;
         .sp-description-container {
             .sp-description {
                 width: 75%;
@@ -92,14 +98,14 @@
             width: 100%;
         }
         .sp-image-container {
-            width: 100%;
+            width: 75%;
             .sp-image {
-                width: 90%;
-                height: 70%;
+                width: 100%;
+                height: 75%;
                 img {
-                    max-height: 300px;
+                    max-height: 400px;
                     border-radius: 5px;
-                    object-fit: cover;
+                    object-fit: contain;
                     width: 100%;
                 }
             }
@@ -107,6 +113,44 @@
             .sp-links {
                 margin-top: 20px;
                 width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-height: 900px) {
+    .single-project-container {
+        .sp-image-container {
+            .sp-image {
+                img {
+                    max-height: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .single-project-container {
+        .sp-image-container {
+            .sp-image {
+                img {
+                    max-height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .single-project-container {
+        height: auto;
+        .sp-description-container {
+            .sp-technologies {
+                flex-wrap: wrap;
+            }
+            .sp-description {
+                height: auto;
             }
         }
     }
