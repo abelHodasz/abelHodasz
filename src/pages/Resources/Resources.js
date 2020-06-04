@@ -38,6 +38,7 @@ import mobbin from "../../static/resourceIcons/mobbin.ico";
 import threejs from "../../static/resourceIcons/threejs.ico";
 import waypoints from "../../static/resourceIcons/waypoints.ico";
 import typer from "../../static/resourceIcons/typer.ico";
+import transfonter from "../../static/resourceIcons/transfonter.ico";
 
 import undraw from "../../static/resourceIcons/undraw.jpg";
 import landbook from "../../static/resourceIcons/land-book.jpg";
@@ -128,6 +129,13 @@ export default function Resources() {
                         img={leshy}
                     >
                         Retro-style sound effect generator
+                    </Resource>
+                    <Resource
+                        link="https://transfonter.org/"
+                        name="Transfonter"
+                        img={transfonter}
+                    >
+                        Specify online fonts to display text on their web pages
                     </Resource>
                 </div>
                 {/*Tools for design*/}
