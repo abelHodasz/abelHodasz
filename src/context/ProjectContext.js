@@ -8,6 +8,8 @@ import labirinthImage from "../static/images/labirinth.png";
 import basicCharacterImage from "../static/images/basicCharacterImage.png";
 import spotify from "../static/images/spotifyMusicGuesser.png";
 import spotifyMobile from "../static/images/spotifyMusicGuesserMobile.png";
+import carcassTwwo from "../static/images/carcasstwwo.png";
+import carcassTwwoMobile from "../static/images/carcassTwwoMobile.png";
 
 import studyStud from "../static/images/studyStud.png";
 
@@ -25,6 +27,7 @@ import efIcon from "../static/icons/efIcon.png";
 import materialIcon from "../static/icons/materialIcon.png";
 import jwtIcon from "../static/icons/jwtIcon.png";
 import nodeIcon from "../static/icons/nodeIcon.png";
+import threeIcon from "../static/icons/three.ico";
 
 export const ProjectContext = createContext();
 
@@ -48,6 +51,7 @@ export const ProjectProvider = (props) => {
         unity: { shortName: "unity", name: "Unity", icon: unityIcon },
 
         node: { shortName: "node", name: "Node.Js", icon: nodeIcon },
+        three: { shortName: "three", name: "Three.js", icon: threeIcon },
     };
 
     const projects = [
@@ -64,6 +68,20 @@ export const ProjectProvider = (props) => {
             technologies: [tech.react, tech.material, tech.node],
             description:
                 "It's a music guessing game. You have to create 2 teams and each round 1 team guesses the name of the track that is playing. You can use predefined playlists or your own playlists. If you have any questions, contact me on github. Have fun!",
+        },
+        {
+            name: "CarcassTwwo",
+            id: "carcasstwwo",
+            featured: true,
+            gitHubLink: "https://github.com/abelHodasz/carcasstwwo-react",
+            page: "/projects/carcasstwwo",
+            category: tech.react.shortName,
+            logo: tech.react.icon,
+            image: carcassTwwo,
+            imageMobile: carcassTwwoMobile,
+            technologies: [tech.react, tech.material, tech.three],
+            description:
+                "Carcasstwwo is an online implementation of the famous boardgame Carcassonne. Carcassonne is a tile-placement game in which the players draw and place a tile with a piece of southern French landscape on it. The tile might feature a city, a road, a cloister, grassland or some combination thereof. Having placed a tile, the player can then decide to place one of their meeples on one of the areas on it. When that area is complete, that meeple scores points for its owner.",
         },
         {
             name: "Sorting Algorithms",
