@@ -54,9 +54,8 @@ export default function () {
                 </Card>
                 <Card header="Other Skills">
                     I have experience in Adobe Programs (Photoshop, Premiere
-                    Pro, Illustrator) and I have created a few Wordpress sites
-                    for clients. I also worked with Unity and the three.js
-                    library.
+                    Pro) and I have created a few Wordpress sites for clients. I
+                    also worked with Unity and the three.js library.
                 </Card>
             </div>
         </div>
