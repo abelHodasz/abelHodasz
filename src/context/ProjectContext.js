@@ -102,8 +102,7 @@ export const ProjectProvider = (props) => {
             name: "Study stud",
             id: "study-stud",
             featured: true,
-            azureLink:
-                "https://hodaszAbel@dev.azure.com/hodaszAbel/ASP%20.NET%20-%20React%20-%20Social%20Media/_git/study-stud-react",
+            gitHubLink: "https://github.com/dolezsariza/study-studs-react",
             page: "/projects/study-stud",
             category: tech.react.shortName,
             logo: tech.react.icon,
