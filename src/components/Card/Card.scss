@@ -9,7 +9,7 @@ $medium-grey: #7e7ea3f1;
     height: auto;
     transition: max-height 0.5s ease;
     .card-header {
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem;
         display: flex;
         height: 1.2rem;
         cursor: pointer;
@@ -24,6 +24,6 @@ $medium-grey: #7e7ea3f1;
     .card-text {
         line-height: 1.5rem;
         letter-spacing: 1px;
-        margin: 1rem;
+        margin: 0 1rem 1rem 1rem;
     }
 }
