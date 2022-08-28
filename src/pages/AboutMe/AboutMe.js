@@ -35,11 +35,12 @@ export default function () {
                 <Card header="Hard Skills">
                     <ul>
                         <li>React</li>
-                        <li>JavaScript</li>
-                        <li>C#</li>
+                        <li>TypeScript</li>
+                        <li>GraphQL</li>
+                        <li>GoLang</li>
+                        <li>NodeJs</li>
                         <li>Git</li>
                         <li>Html, Css</li>
-                        <li>Python</li>
                     </ul>
                 </Card>
                 <Card header="Soft Skills">
