@@ -37,7 +37,7 @@ export const ProjectProvider = (props) => {
     const tech = {
         react: { shortName: "react", name: "React", icon: reactIcon },
         js: { shortName: "js", name: "JavaScript", icon: jsIcon },
-        js: { shortName: "ts", name: "TypeScript", icon: tsIcon },
+        ts: { shortName: "ts", name: "TypeScript", icon: tsIcon },
         p5: { shortName: "p5", name: "p5.js", icon: p5Icon },
 
         git: { shortName: "git", name: "Git", icon: gitIcon },
