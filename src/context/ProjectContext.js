@@ -17,6 +17,7 @@ import studyStudMobile from "../static/images/studyStudMobile.png";
 
 import reactIcon from "../static/icons/react.svg";
 import jsIcon from "../static/icons/js.png";
+import tsIcon from "../static/icons/ts.png";
 import p5Icon from "../static/icons/p5js.svg";
 import sassIcon from "../static/icons/sass.svg";
 import unityIcon from "../static/icons/unityIcon.png";
@@ -28,6 +29,7 @@ import materialIcon from "../static/icons/materialIcon.png";
 import jwtIcon from "../static/icons/jwtIcon.png";
 import nodeIcon from "../static/icons/nodeIcon.png";
 import threeIcon from "../static/icons/three.ico";
+import firebaseIcon from "../static/icons/firebaseIcon.png";
 
 export const ProjectContext = createContext();
 
@@ -35,6 +37,7 @@ export const ProjectProvider = (props) => {
     const tech = {
         react: { shortName: "react", name: "React", icon: reactIcon },
         js: { shortName: "js", name: "JavaScript", icon: jsIcon },
+        js: { shortName: "ts", name: "TypeScript", icon: tsIcon },
         p5: { shortName: "p5", name: "p5.js", icon: p5Icon },
 
         git: { shortName: "git", name: "Git", icon: gitIcon },
@@ -52,6 +55,7 @@ export const ProjectProvider = (props) => {
 
         node: { shortName: "node", name: "Node.Js", icon: nodeIcon },
         three: { shortName: "three", name: "Three.js", icon: threeIcon },
+        firebase: {shortName: "firebase", name: "Firebase", icon: firebaseIcon}
     };
 
     const projects = [
@@ -64,7 +68,7 @@ export const ProjectProvider = (props) => {
             logo: tech.react.icon,
             image: spotify,
             imageMobile: spotifyMobile,
-            technologies: [tech.react, tech.material, tech.node],
+            technologies: [tech.react, tech.ts, tech.firebase],
             link: "https://spotify-guess-what.web.app/",
             description:
                 "Guess what is a music guessing game. You can sign in with your spotify account and create and join lobbies. Once you've joined, each player picks a track from their spotify playlists. Then one by one the songs play and players try to guess the name of them.",
