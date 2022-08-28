@@ -65,7 +65,7 @@ export const ProjectProvider = (props) => {
             image: spotify,
             imageMobile: spotifyMobile,
             technologies: [tech.react, tech.material, tech.node],
-            link: "https://https://spotify-guess-what.web.app/",
+            link: "https://spotify-guess-what.web.app/",
             description:
                 "Guess what is a music guessing game. You can sign in with your spotify account and create and join lobbies. Once you've joined, each player picks a track from their spotify playlists. Then one by one the songs play and players try to guess the name of them.",
         },
