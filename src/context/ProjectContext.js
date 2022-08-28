@@ -56,18 +56,18 @@ export const ProjectProvider = (props) => {
 
     const projects = [
         {
-            name: "Spotify Music Guesser",
-            id: "spotify-music-guesser",
+            name: "Guess What",
+            id: "spotify-guess-what",
             featured: true,
-            gitHubLink: "https://github.com/abelHodasz/spotify-music-guesser",
-            page: "/projects/spotify-music-guesser",
+            page: "/projects/spotify-guess-what",
             category: tech.react.shortName,
             logo: tech.react.icon,
             image: spotify,
             imageMobile: spotifyMobile,
             technologies: [tech.react, tech.material, tech.node],
+            link: "https://https://spotify-guess-what.web.app/",
             description:
-                "It's a music guessing game. You have to create 2 teams and each round 1 team guesses the name of the track that is playing. You can use predefined playlists or your own playlists. If you have any questions, contact me on github. Have fun!",
+                "Guess what is a music guessing game. You can sign in with your spotify account and create and join lobbies. Once you've joined, each player picks a track from their spotify playlists. Then one by one the songs play and players try to guess the name of them.",
         },
         {
             name: "CarcassTwwo",
