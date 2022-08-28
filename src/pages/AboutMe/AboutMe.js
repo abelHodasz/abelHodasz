@@ -29,8 +29,8 @@ export default function () {
                     My main interest is in front end web development but I like
                     being challenged and learn interesting current technologies
                     (Machine learning, Cloud, Game Development). My strongest
-                    skills are in React, JavaScipt, and C#. I also have some
-                    experience in Python, Java, and Unity.
+                    skills are in React, TypeScript, GraphQL and GoLang. I also have some
+                    experience in Python and NodeJs.
                 </Card>
                 <Card header="Hard Skills">
                     <ul>
